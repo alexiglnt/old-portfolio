@@ -113,8 +113,8 @@ function Home2() {
           {/* Troisième carte */}
           <Col>
             <a
-              href="/expreriences"
-              onClick={(e) => {e.preventDefault(); navigate("/expreriences") }}
+              href="/experiences"
+              onClick={(e) => {e.preventDefault(); navigate("/experiences") }}
             >
               <Card className="home-cards card-left card-bottom">
                 <Card.Body>
