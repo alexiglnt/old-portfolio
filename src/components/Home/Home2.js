@@ -7,8 +7,11 @@ import {
   AiOutlineLineChart,
   AiOutlineThunderbolt
 } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
 
 function Home2() {
+  const navigate = useNavigate();
+
   return (
     <Container fluid className="home-about-section" id="about">
 
@@ -67,7 +70,8 @@ function Home2() {
 
           <Col>
             <a
-              href="/project"
+              href="/projects"
+              onClick={(e) => {e.preventDefault(); navigate("/projects") }}
             >
               <Card className="home-cards card-left card-top">
                 <Card.Body>
@@ -88,6 +92,7 @@ function Home2() {
           <Col>
             <a
               href="/skills"
+              onClick={(e) => {e.preventDefault(); navigate("/skills") }}
             >
               <Card className="home-cards card-right card-top">
                 <Card.Body>
@@ -108,7 +113,8 @@ function Home2() {
           {/* Troisième carte */}
           <Col>
             <a
-              href="/about"
+              href="/expreriences"
+              onClick={(e) => {e.preventDefault(); navigate("/expreriences") }}
             >
               <Card className="home-cards card-left card-bottom">
                 <Card.Body>
@@ -125,7 +131,8 @@ function Home2() {
           {/* Quatrième carte */}
           <Col>
             <a
-              href="/about"
+              href="/contact"
+              onClick={(e) => {e.preventDefault(); navigate("/contact") }}
             >
               <Card className="home-cards card-right card-bottom">
                 <Card.Body>

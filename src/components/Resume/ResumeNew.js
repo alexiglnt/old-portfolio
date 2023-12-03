@@ -21,10 +21,9 @@ function ResumeNew() {
         <Particle />
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
-            variant="primary"
             href={pdf}
             target="_blank"
-            style={{ maxWidth: "250px" }}
+            style={{ maxWidth: "250px", backgroundColor: "red", borderColor: "#ff4c60" }}
           >
             <AiOutlineDownload />
             &nbsp;Télécharger le CV
