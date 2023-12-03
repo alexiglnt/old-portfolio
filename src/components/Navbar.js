@@ -79,7 +79,7 @@ function NavBar() {
                 as={Link}
                 to="/projects"
                 onClick={() => updateExpanded(false)}
-                style={isLinkActive("/project") ? { fontWeight: "bold" } : {}}
+                style={isLinkActive("/projects") ? { fontWeight: "bold" } : {}}
               >
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
@@ -119,7 +119,7 @@ function NavBar() {
                 as={Link}
                 to="/resume"
                 onClick={() => updateExpanded(false)}
-                style={isLinkActive("/contact") ? { fontWeight: "bold" } : {}}
+                style={isLinkActive("/resume") ? { fontWeight: "bold" } : {}}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> CV
               </Nav.Link>

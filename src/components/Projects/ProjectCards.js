@@ -1,8 +1,5 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import { CgWebsite } from "react-icons/cg";
-import { BsGithub } from "react-icons/bs";
+import { AiOutlineGithub } from "react-icons/ai";
 
 function ProjectCards({ data, id }) {
   return (
@@ -32,7 +29,10 @@ function ProjectCards({ data, id }) {
             </div>
           </div>
           <div className="div_download_btn">
-            <a className="download_btn" href="${project.link_project_page}">PLUS D'INFORMATIONS</a>
+            <a className="download_btn" href={data.github} target="_blank" rel="noreferrer" >
+              <AiOutlineGithub style={{ fontSize: "20px", marginRight: "6px", marginBottom: "2px" }} />
+              Plus d'informations
+            </a>
           </div>
         </>
 
@@ -60,7 +60,10 @@ function ProjectCards({ data, id }) {
             </div>
           </div>
           <div className="div_download_btn">
-            <a className="download_btn" href="${project.link_project_page}">PLUS D'INFORMATIONS</a>
+            <a className="download_btn" href={data.github} target="_blank" rel="noreferrer" >
+              <AiOutlineGithub style={{ fontSize: "20px", marginRight: "6px", marginBottom: "2px" }} />
+              Plus d'informations
+            </a>
           </div>
         </>
       )

@@ -17,17 +17,26 @@ function ResumeNew() {
 
   return (
     <div>
-      <Container fluid className="resume-section">
+      <Container fluid className="project-section">
+
+        <h1 className="project-heading">
+          Mon <strong className="purple"> CV </strong>
+        </h1>
+
+        <br/> <br/>
+
         <Particle />
         <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
+          <a
             href={pdf}
             target="_blank"
-            style={{ maxWidth: "250px", backgroundColor: "red", borderColor: "#ff4c60" }}
+            rel="noreferrer"
+            className="download_btn"
+            style={{ width: "200px", marginBottom: "0" }}
           >
             <AiOutlineDownload />
             &nbsp;Télécharger le CV
-          </Button>
+          </a>
         </Row>
 
         <Row className="resume">

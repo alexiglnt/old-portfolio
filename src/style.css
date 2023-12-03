@@ -296,6 +296,25 @@ button:focus {
   color: var(--main-color);
 }
 
+@media screen and (max-width: 767px) {
+
+  .home-section {
+    width: 100vw;
+    background-image: none;
+    background-position: none;
+    background-repeat: none;
+  }
+
+  .heading {
+    font-size: 1.5em !important;
+  }
+
+  .heading-name {
+    font-size: 2em !important;
+  }
+  
+}
+
 .Typewriter__wrapper {
   font-size: 2.2em !important;
   color: var(--clear-blue) !important;
@@ -663,7 +682,7 @@ button:focus {
   margin: 15px !important;
   padding: 10px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  border: 1.7px solid white !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;
@@ -690,7 +709,7 @@ button:focus {
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  border: 2.2px solid var(--main-color) !important;
 }
 .tech-icon-images {
   padding: 20px !important;
@@ -843,16 +862,29 @@ button:focus {
 
 .fork-btn-inner {
   line-height: 1.4em !important;
-  background-color: var(--color-btn-contact-opacity) !important;
+  background-color: var(--main-color) !important;
   padding: 0.25rem 1.1rem !important;
   vertical-align: middle !important;
   text-align: center !important;
+  border-color: var(--color-btn-contact) !important;
+
+  -webkit-transition: all 0.8s ease; /* Safari et Chrome */
+  -moz-transition: all 0.8s ease; /* Firefox */
+  -ms-transition: all 0.8s ease; /* Internet Explorer 9 */
+  -o-transition: all 0.8s ease; /* Opera */
+  transition: all 0.8s ease;
 }
 
 .fork-btn-inner:hover {
-  transform: translateY(-2px) !important;
-  background-color: var(--color-btn-contact) !important;
+  background-color: var(--main-color) !important;
   border-color: var(--color-btn-contact) !important;
+  color: black !important;
+
+  -webkit-transition: all 0.8s ease; /* Safari et Chrome */
+  -moz-transition: all 0.8s ease; /* Firefox */
+  -ms-transition: all 0.8s ease; /* Internet Explorer 9 */
+  -o-transition: all 0.8s ease; /* Opera */
+  transition: all 0.8s ease;
 }
 .fork-btn-inner::after {
   display: none !important;
@@ -878,19 +910,15 @@ button:focus {
 }
 
 .download_btn {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 15px 20px;
   text-decoration: none;
   justify-content: center;
-  border-radius: 30px;
+  border-radius: 0.5em;
   border-width: 0px;
-  background-color: #0e3ff1;
+  background-color: var(--main-color);
   font-size: 16px;
   color: #FFFFFF;
   line-height: 16px;
-  margin-top: 30px;
   
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.4));
   margin-top: 70px;
@@ -905,12 +933,7 @@ button:focus {
 
 .download_btn:hover {
   background-color: rgb(68, 109, 255);
-
-  -webkit-transform:scale(1.10); /* Safari et Chrome */
-  -moz-transform:scale(1.10); /* Firefox */
-  -ms-transform:scale(1.10); /* Internet Explorer 9 */
-  -o-transform:scale(1.10); /* Opera */
-  transform:scale(1.10);
+  color: black;
 }
 
 .div_download_btn {
@@ -1756,6 +1779,10 @@ a.dl-cv {
   padding-top: 50px;
 }
 
+.marge-exp {
+  margin-inline: 200px;
+}
+
 .exp-wrapper {
   display: flex;
   justify-content: center;
@@ -1763,11 +1790,11 @@ a.dl-cv {
   align-items: center;
 }
 
-.marge-exp {
-  margin-inline: 200px;
+@media screen and (max-width: 767px) {
+  .card-exp {
+    width: 250px !important;
+  }
 }
-
-
 
 .card-exp {
   margin: 1rem;

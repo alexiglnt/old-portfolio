@@ -35,21 +35,6 @@ function Home2() {
               <br />
               <br />
               J'apprécie particulièrement le langage de programmation <b className="purple">JavaScript</b> et les frameworks <b className="purple"> React </b> et <b className="purple"> Next.js </b>
-
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
             </p>
           </Col>
         </Row>
